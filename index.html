@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>뭐든지 랜덤 — 고민될 땐 뽑아보세요</title>
+<meta name="description" content="영어 이름, 반려동물 이름, 투폰 뒷자리, 비밀번호 패턴, 오늘 뭐 입지, 점심 메뉴까지. 회사와 일상에서 필요한 랜덤 생성기를 한 곳에 모았습니다.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="random/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='26' fill='%23d7ff5c'/><text x='50' y='74' font-size='64' font-family='sans-serif' font-weight='bold' text-anchor='middle' fill='%230a0b0d'>?</text></svg>">
+<link rel="apple-touch-icon" href="random/logo.png">
+</head>
+<body>
+
+<div class="app">
+  <aside class="side">
+    <div class="brand">
+      <div class="mark"><img src="random/logo.png" alt="" width="46" height="46"></div>
+      <div>
+        <b>뭐든지 랜덤</b>
+        <span>고민될 땐 뽑아보세요</span>
+      </div>
+    </div>
+
+    <nav class="nav" id="nav"></nav>
+
+    <div class="side-foot">
+      <div class="counter">오늘 <b id="count">0</b>번 뽑았어요</div>
+      <button class="ghost-btn" id="lucky" type="button">아무거나 뽑기 →</button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section class="panel" id="panel"></section>
+
+    <footer class="foot">
+      <div class="foot-main">
+        <div class="foot-intro">
+          <div class="foot-title">뭐든지 랜덤</div>
+          <p>
+            이름을 지어야 할 때, 비밀번호가 필요할 때, 점심 메뉴가 안 떠오를 때.
+            결정이 막히는 순간을 위해 만든 랜덤 생성기 모음입니다.
+            회사에서 쓰는 <b>영어 이름 · 투폰 뒷자리 · 사내 이메일 아이디</b>부터
+            <b class="nb">반려견 · 반려묘 이름</b>, <b>점심 메뉴</b>, <b>로또 번호</b>까지
+            <b class="count-num" id="gen-count">19</b>가지 도구를 한 화면에 담았습니다.
+          </p>
+        </div>
+        <ul class="foot-list">
+          <li>
+            <b>설치도 회원가입도 없이</b>
+            <span>링크만 열면 바로 뽑을 수 있습니다.</span>
+          </li>
+          <li>
+            <b>결과는 브라우저에서만 생성</b>
+            <span>입력한 값은 서버로 전송되거나 저장되지 않습니다.</span>
+          </li>
+          <li>
+            <b>뽑은 값은 한 번 더 확인</b>
+            <span>비밀번호 · 이메일 아이디는 실제 사용 전에 꼭 점검하세요.</span>
+          </li>
+        </ul>
+      </div>
+      <div class="foot-base">
+        <span>© <span id="year">2026</span> 뭐든지 랜덤 · 결과는 재미와 참고용입니다.</span>
+        <div class="keys" id="keys"></div>
+      </div>
+    </footer>
+  </main>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<noscript>
+  <div style="position:fixed;left:0;right:0;bottom:0;z-index:200;padding:14px 18px;background:#d7ff5c;color:#0a0b0d;font:600 13px/1.5 system-ui,sans-serif;text-align:center">
+    이 페이지는 자바스크립트가 필요합니다. 브라우저에서 스크립트 실행을 허용한 뒤 새로고침해 주세요.
+  </div>
+</noscript>
+
+<script src="random/app.js"></script>
+</body>
+</html>
